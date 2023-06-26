@@ -9,7 +9,7 @@ On the other hand, `offline.py` is responsible for extracting the features of al
 
 Now, let's return to the input image part. When an image is inputted, `server_base_64.py` processes it, extracts the features, converts them to JSON format, and compares them with all the features stored in the "Features" folder. The comparison process is based on the "Manhattan distance measure." The differences between the stored features and the input feature are calculated, and the top 30 features with the least difference compared to the inputted feature are chosen.
 
-Each of these features is assigned a unique image ID, which is identified within `server_base_64.py`. These IDs serve as addresses to the corresponding images. Therefore, upon inputting an image into our system, we retrieve the top 30 similar images. This functionality has been incorporated into the company's website and is referred to as the Image-Based Search Engine.
+Each of these features is assigned a unique image ID, which is identified within `server_base_64.py`. These IDs serve as addresses to the corresponding images. Therefore, upon inputting an image into our system, we retrieve the top 30 similar images. This api which I created has been incorporated into the company's website and is referred to as the Image-Based Search Engine.
 
 
 
